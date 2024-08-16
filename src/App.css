@@ -1,3 +1,29 @@
+#trailer {
+  /* background-color: rgba(255, 255, 0, 0.69); */
+  background-color: rgba(246, 255, 0, 0.821);
+  border: yellow;
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms ease, transform 0.1s ease;
+  /* box-shadow: 0 0 15px 5px rgba(255, 255, 0, 5.5); */
+  box-shadow: 0 0 60px 18px rgba(255, 255, 0, 5);
+
+  /* 0 0: Offset (no horizontal or vertical offset)
+80px: Blur radius (jyada bada blur radius for this effect
+30px: Spread radius (controls how far the shadow extends outwards) */
+}
+
+body:hover > #trailer {
+  opacity: 1;
+}
+
+/* mouse Trailer ends here------- */
+
 /* <<<<<<---------- GALLERY CSS Start... ------------>>>>>> */
 @media (min-width: 1024px) and (max-width: 1060px) {
   .MainDivGallery .overlay1 {
